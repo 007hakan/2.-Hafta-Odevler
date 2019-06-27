@@ -1,0 +1,31 @@
+print("Lutfen bulmak istediginiz geometrik sekli seciniz...")
+sec=int(input("\nUcgen icin 3'e;\nKare/Dortgen/Diktorgen icin 4'e basiniz."))
+if sec==3:
+    k1=int(input("1. Kenar:"))
+    k2=int(input("2. Kenar:"))
+    k3=int(input("3. Kenar:"))
+    if (k1+k2)<=k3 or k2+k3<=k1:
+        print("Girmis oldugunuz degerler bir ucgen belirtmiyor.")
+    elif k1==k2==k3:
+        print("Eskenar Ucgen.")
+    elif k1==k2 or k2==k3 or k1==k3:
+        print("Ikizkenar ucgen.")
+    elif k1 != k2 != k3 and (k1+k2)<=k3 or k2+k3<=k1:
+        print("Cesitkenar Ucgen")
+    else:
+        print("Ucgen Belirtmiyor.")
+elif sec==4:
+    ke1 = input("1. Kenar:")
+    ke2 = input("2. Kenar:")
+    ke3 = input("3. Kenar:")
+    ke4= input("4.Kenar:")
+    if ke1==ke2==ke3==ke4:
+        print("Bu Bir Karedir.")
+    elif ke1==ke2 and ke2!=ke3!=ke4:
+        print("Bu bir yamuktur.")#Bidaha olmasin.:)
+    elif ke1==ke2 and ke3==ke4 and ke1!=ke4:
+        print("Bu bir Dikdortgendir.")
+    elif ke2!=ke3!=ke4!=ke1:
+        print("Cesitkenar Dorgen")
+    else:
+        print("Uzgunuz. Girdiginiz degerler bir dortgen belirtmiyor.")
