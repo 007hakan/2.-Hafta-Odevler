@@ -1,0 +1,32 @@
+# Kullanicadan 2 input alinacak:
+# 1-km-mil donusumu mu yapmak istiyor, mil-km donusumu mu yapmak istiyor.
+# 2-donusturmek istedigi birimin uzunlugu kactir?
+    #Donusum yapilacak birimler mil ve kilometre olacak.
+# Kullanici eger programdan cikmak istiyorsa "q" tusuna basmali.Aksi halde program surekli calismaya devam etmeli.
+
+print("Lutfen yapmak istediginiz islemi seciniz.")
+
+while True:
+    deger = int(input("km-mil-donusumu icin 0'a,mil-km donusumu icin 1'e basiniz:(0/1)"))
+    cikis = input("Cikmak icin (q)'ya, devam etmek icin ENTER'a basiniz")
+    if cikis == "q":
+        print("Sistemden cikiliyor....")
+        break
+    pass
+    if deger ==int(0):
+        mil=input("Lutfen Metre cinsinden deger giriniz:")
+        print(int(mil)*float(0.621),"Mil.")
+        cikis = input("Cikmak icin (q)'ya basiniz")
+        if cikis=="q":
+            print("Sistemden cikiliyor....")
+            break
+    elif deger==int(1):
+        km=input("Lutfen Mil cinsinden deger giriniz:")
+        print(int(km) * float(1.609),"Km.")
+        cikis = input("Cikmak icin (q)'ya basiniz")
+        if cikis=="q":
+            print("Sistemden cikiliyor....")
+            break
+    elif cikis=="q":
+        print("Sistemden cikiliyor....")
+        break
