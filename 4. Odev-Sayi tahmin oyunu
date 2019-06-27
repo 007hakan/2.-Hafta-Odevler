@@ -1,0 +1,27 @@
+#Bir degiskene 1-10 arasinda bir sayi atayin.Kullanicidan bu sayiyi tahmin etmesini isteyin.
+#    Kullanici 5 ya da 4 denemede bilirse 1 yildiz kazansin, 3 ya da 2 denemede bilirse 2 yildiz kazansin,
+#    1 denemede bilirse 3 yildiz kazansin.
+import random
+
+sayi=random.randrange(1,10)
+
+
+deger1=int(input("Birinci tahminizi 1-10 arasinda giriniz:"))
+
+if deger1==sayi:
+    print("1. tahminde dogru bildiniz")
+    print("★" * 3)
+elif int(input("2. tahminizi 1-10 arasinda giriniz:"))==sayi:
+    print("2.tahminde dogru bildiniz")
+    print("★"*2)
+elif int(input("3. tahminizi 1-10 arasinda giriniz:"))==sayi:
+    print("3.tahminde dogru bildiniz")
+    print("★" * 2)
+elif input("4. tahminizi 1-10 arasinda giriniz:")==sayi:
+    print("4.tahminde dogru bildiniz")
+    print("★" * 1)
+elif input("5. tahminizi 1-10 arasinda giriniz:")==sayi:
+    print("5.tahminde dogru bildiniz")
+    print("★" * 1)
+else:
+    print("Deneme hakkiniz doldu!!!!")
