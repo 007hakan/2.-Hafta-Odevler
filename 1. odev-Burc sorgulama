@@ -1,0 +1,38 @@
+#Kullanicidan dogum gununu ve ayini isteyin, program hangi burc oldugunu soylesin.
+
+print("Hangi Burcsunuz? Ogrenmek Ister Misiniz?")
+print("Lutfen Dogum Tarihinizi Giriniz...")
+
+gun= int(input("Gun:"))
+ay = int(input("Ay:"))
+yil = int(input("(Istege Bagli)Yil:"))
+
+print("Dogum Tarihiniz:",gun,ay,yil,sep='/')
+
+burclar=["Koc","Boga","İkizler","Yengeç","Aslan","Başak","Terazi","Akrep","Yay","Oğlak","Kova","Balık"]
+if int(ay)==3 and int(gun)>=21 and int(gun)<=31 or int(ay)==4 and int(gun)<=20 and int(gun)>=1:
+    print(burclar[0],"burcusunuz!!!!!!!")
+elif int(ay)==4 and int(gun)>=21 and int(gun)<=30 or int(ay)==5 and int(gun)<=21and int(gun)>=1:
+    print(burclar[1],"burcusunuz!!!!!!!")
+elif int(ay)==5 and int(gun)>=22  and int(gun)<=31 or int(ay)==6 and int(gun)<=22and int(gun)>=1:
+    print(burclar[2],"burcusunuz!!!!!!!")
+elif int(ay)==6 and int(gun)>=23 and int(gun)<=30 or int(ay)==7 and int(gun)<=22and int(gun)>=1:
+    print(burclar[3],"burcusunuz!!!!!!!")
+elif int(ay)==7 and int(gun)>=23 and int(gun)<=31 or int(ay)==8 and int(gun)<=22and int(gun)>=1:
+    print(burclar[4],"burcusunuz!!!!!!!")
+elif int(ay)==8 and int(gun)>=23 and int(gun)<=31 or int(ay)==9 and int(gun)<=22and int(gun)>=1:
+    print(burclar[5],"burcusunuz!!!!!!!")
+elif int(ay)==9 and int(gun)>=23 and int(gun)<=30 or int(ay)==10 and int(gun)<=22and int(gun)>=1:
+    print(burclar[6],"burcusunuz!!!!!!!")
+elif int(ay)==10 and int(gun)>=23 and int(gun)<=31 or int(ay)==11 and int(gun)<=21and int(gun)>=1:
+    print(burclar[7],"burcusunuz!!!!!!!")
+elif int(ay)==11 and int(gun)>=22 and int(gun)<=30 or int(ay)==12 and int(gun)<=21and int(gun)>=1:
+    print(burclar[8],"burcusunuz!!!!!!!")
+elif int(ay) == 12 and int(gun) >= 22 and int(gun)<=31 or int(ay) == 1 and int(gun) <= 21and int(gun)>=1:
+    print(burclar[9], "burcusunuz!!!!!!!")
+elif int(ay) == 1 and int(gun) >= 22 and int(gun)<=31 or int(ay) == 2 and int(gun) <= 19and int(gun)>=1:
+    print(burclar[10], "burcusunuz!!!!!!!")
+elif int(ay) == 2 and int(gun) >= 20 and int(gun)<=29 or int(ay) == 3 and int(gun) <= 20 and int(gun)>=1:
+    print(burclar[11], "burcusunuz!!!!!!!")
+else:
+    print("Yanlis giris yaptiniz. Tekrar deneyiniz!!!!!!!!!!!!!!!")
