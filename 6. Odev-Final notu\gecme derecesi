@@ -1,0 +1,24 @@
+vize1=int(input("1. Vize Notunuz:"))
+vize2=int(input("2. Vize Notunuz:"))
+Final=int(input("Final Notunuz:"))
+
+ortalama=int((vize1*0.3)+(vize2*0.3)+(Final*0.4))
+print("Not Ortalamaniz:",ortalama,"'dir.")
+if ortalama>=90:
+    print("AA Aldiniz.")
+elif ortalama >=85:
+    print("BA Aldiniz.")
+elif ortalama >= 80:
+    print("BB Aldiniz.")
+elif ortalama >= 75:
+    print("CB Aldiniz.")
+elif ortalama >= 70:
+    print("CC Aldiniz.")
+elif ortalama >=65:
+    print("DC Aldiniz.")
+elif ortalama >= 60:
+    print("DD Aldiniz.")
+elif ortalama >= 55:
+    print("FD Aldiniz.")
+elif ortalama < 55:
+    print("FF Aldiniz. Kaldiniz Galiba :)")
